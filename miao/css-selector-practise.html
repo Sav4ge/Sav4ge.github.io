@@ -79,26 +79,12 @@
         }
         /* 质数标记为红色 */
         
-        div.prime ul li {
-            color: red;
-        }
-        
-        div.prime ul li:nth-child(2n),
-        div.prime ul li:nth-child(3n),
-        div.prime ul li:nth-child(5n),
-        div.prime ul li:nth-child(7n) {
-            color: black;
-        }
-        
-        div.prime ul li:nth-child(2),
-        div.prime ul li:nth-child(3),
-        div.prime ul li:nth-child(5),
-        div.prime ul li:nth-child(7) {
+        div.prime ul li:not(:nth-child(2n+4)):not(:nth-child(3n+6)):not(:nth-child(5n+10)):not(:nth-child(7n+14)) {
             color: red;
         }
         
         div.prime ul li:nth-child(1) {
-            color: yellow;
+            color: yellow !important;
         }
     </style>
 </head>
