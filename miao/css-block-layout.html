@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            color: white;
+            background-color: black;
+            padding-left: calc(50vw - 300px);
+        }
+        
+        p {
+            margin: 0 auto;
+            margin-top: 16px;
+            width: 600px;
+            text-align: justify;
+        }
+        
+        .form {
+            width: 600px;
+            margin: 15px auto;
+        }
+        
+        div:not([class="form"]) {
+            border: 3px solid black;
+            width: 180px;
+            height: 40px;
+            margin: 15px 30px;
+            margin-left: 0px;
+            background-color: pink;
+            text-align: center;
+            line-height: 2em;
+        }
+        
+        div>div:nth-child(3n+2) {
+            margin-top: -61.5px;
+            margin-left: 210px;
+        }
+        
+        div>div:nth-child(3n+3) {
+            margin-top: -61.5px;
+            margin-left: 415px;
+        }
+        
+        section {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px dotted transparent;
+            border-bottom-color: black;
+        }
+        
+        footer {
+            background-color: #EE7AE9;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>hello world 请调整浏览器窗口大小查看效果</header>
+
+    <p>页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 页面主题 宽度600px 看上去十分酷炫 </p>
+
+    <div class="form">
+        <div>宽180高40(包含边框)</div>
+        <div>产品</div>
+        <div>产品</div>
+        <div>水平间距30px</div>
+        <div>产品</div>
+        <div>产品</div>
+        <div>垂直间距15px</div>
+        <div>产品</div>
+        <div>产品</div>
+        <div>边框宽度3px</div>
+        <div>产品</div>
+        <div>产品</div>
+    </div>
+    <section>link</section>
+    <section>link</section>
+    <section>link</section>
+    <section>link</section>
+    <section>link</section>
+
+    <footer class="foot1">&copy;版权所有</footer>
+    <footer class="foot2">本页面所有布局均使用块元素</footer>
+
+</body>
+
+</html>
