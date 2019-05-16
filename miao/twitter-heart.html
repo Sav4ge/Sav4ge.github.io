@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style type="text/css">
+        input {
+            display: none;
+        }
+        
+        label {
+            margin: auto;
+            display: block;
+            background-image: url(https://abs.twimg.com/a/1557861269/img/animations/web_heart_animation_edge.png);
+            width: 100px;
+            height: 100px;
+            transition: background-position 1s steps(28);
+        }
+        
+        input:checked+label {
+            background-position: -2800px 0;
+            transition: background-position .5s steps(28);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="btn">
+    <label for="btn"></label>
+</body>
+
+</html>
