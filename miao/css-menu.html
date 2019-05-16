@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            position: absolute;
+        }
+        
+        li:hover {
+            background-color: pink;
+        }
+        
+        ul li {
+            background-color: rgb(0, 162, 255);
+            border: 2px solid transparent;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        ul.outer li ul {
+            position: absolute;
+            left: 75%;
+        }
+        
+        li ul li {
+            opacity: 0;
+            transition: opacity 0.6s;
+            position: relative;
+            top: -1.5em;
+        }
+        
+        ul ul {
+            pointer-events: none;
+        }
+        
+        li:hover>ul>li {
+            opacity: 1;
+            pointer-events: auto;
+            transition: opacity 0.6s;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>文件
+            <ul class="outer">
+                <li>新建文件</li>
+                <li>新建窗口</li>
+                <li>
+                    打开最近的文件
+                    <ul>
+                        <li>E:\Git!\MDN Javascript\01js.html</li>
+                        <li>E:\Git!\html和css的鬼故事\假装自己会css\css简介.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>文件
+            <ul class="outer">
+                <li>新建文件</li>
+                <li>新建窗口</li>
+                <li>
+                    打开最近的文件
+                    <ul>
+                        <li>E:\Git!\MDN Javascript\01js.html</li>
+                        <li>E:\Git!\html和css的鬼故事\假装自己会css\css简介.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>文件
+            <ul class="outer">
+                <li>新建文件</li>
+                <li>新建窗口</li>
+                <li>
+                    打开最近的文件
+                    <ul>
+                        <li>E:\Git!\MDN Javascript\01js.html</li>
+                        <li>E:\Git!\html和css的鬼故事\假装自己会css\css简介.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
