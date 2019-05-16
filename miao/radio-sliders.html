@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        .artist {
+            width: 800px;
+            height: 600px;
+            border: 10px groove;
+            margin: auto;
+        }
+        
+        .artist input {
+            display: none;
+        }
+        
+        div.lab {
+            position: relative;
+            left: 47.5%;
+        }
+        
+        .lab label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+        
+        .artist img {
+            position: absolute;
+            top: 2%;
+            opacity: 0;
+            width: 800px;
+            height: 600px;
+            transition: opacity 1s linear;
+        }
+        
+        .artist input:checked+img {
+            opacity: 1;
+        }
+        
+        .btn span {
+            display: inline-block;
+            font-size: 30px;
+        }
+        
+        #prev {
+            position: absolute;
+            right: 80%;
+            bottom: 70%;
+        }
+        
+        #next {
+            position: absolute;
+            left: 80%;
+            bottom: 70%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="artist">
+        <input checked type="radio" name="btn" id="p1">
+        <img src="https://i2.hoopchina.com.cn/hupuapp/bbs/976989420515/thread_976989420515_20190424194933_s_2244884_w_342_h_240_47117.gif" alt="" title="把保护刷在公屏上">
+        <input type="radio" name="btn" id="p2">
+        <img src="https://i4.hoopchina.com.cn/hupuapp/bbs/976989420515/thread_976989420515_20190424194932_s_5041264_w_320_h_273_87637.gif" alt="" title="把保护刷在公屏上">
+        <input type="radio" name="btn" id="p3">
+        <img src="https://i3.hoopchina.com.cn/hupuapp/bbs/976989420515/thread_976989420515_20190424194933_s_4097267_w_320_h_313_48367.gif" alt="" title="把保护刷在公屏上">
+        <input type="radio" name="btn" id="p4">
+        <img src="https://i4.hoopchina.com.cn/hupuapp/bbs/699/34136655020699/thread_34136655020699_20190424204659_s_1171270_w_268_h_256_91239.gif" alt="" title="把保护刷在公屏上">
+        <input type="radio" name="btn" id="p5">
+        <img src="https://i1.hoopchina.com.cn/hupuapp/bbs/890/157550235048890/thread_157550235048890_20190424204731_s_3434652_w_229_h_229_63423.gif" alt="" title="把保护刷在公屏上">
+    </div>
+    <div class="lab">
+        <label for="p1"></label>
+        <label for="p2"></label>
+        <label for="p3"></label>
+        <label for="p4"></label>
+        <label for="p5"></label>
+    </div>
+    <div class="btn">
+        <span id="prev">&lt;</span>
+        <span id="next">&gt;</span>
+    </div>
+</body>
+
+</html>
