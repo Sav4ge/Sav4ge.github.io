@@ -16,7 +16,8 @@
             height: 40px;
             position: absolute;
             border-radius: 50px;
-            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3) inset;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            transition: all 0.2s linear;
         }
         
         span {
@@ -27,20 +28,21 @@
             position: relative;
             top: 8%;
             left: 5%;
-            transition: left 0.2s linear;
+            transition: all 0.2s linear;
             background-color: white;
         }
         
         input:checked+label {
             background-color: #33ff99;
-            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0 0 40px 10 rgba(51, 255, 153, 1) inset;
+            transition: all 0.2s linear;
         }
         
         input:checked+label>span {
             position: relative;
             left: 55%;
             top: 8%;
-            transition: left 0.2s linear;
+            transition: all 0.2s linear;
         }
     </style>
 </head>
