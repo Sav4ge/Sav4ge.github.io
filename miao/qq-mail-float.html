@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>JS Bin</title>
+    <title>My Mail</title>
     <style type="text/css">
         * {
             background-color: rgba(0, 0, 0, 0.08);
@@ -17,20 +17,46 @@
         header {
             width: 100%;
             height: 10%;
-            border: 1px solid;
+        }
+        
+        header img {
+            background-size: cover;
+        }
+        
+        span {
+            display: inline-block;
+        }
+        
+        span a {
+            font-size: 12px;
+            color: black;
         }
         
         main {
             width: 100%;
             height: 90%;
             border: 1px solid;
+            border-radius: 20px;
         }
         
         aside {
+            background-color: black;
             width: 19%;
             height: 100%;
             float: left;
             border: 1px solid;
+            border-radius: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            text-align: left;
+            text-indent: 0em;
+            border: 1px solid red;
+        }
+        
+        a {
+            color: white;
         }
         
         div {
@@ -38,17 +64,47 @@
             height: 100%;
             border: 1px solid;
             float: right;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-    <header>Mail.QQ</header>
+    <header><img src="https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/logo/logo_10_01e9c5d.gif">
+        <span>周黑炭|&lt;619796903@qq.com&gt;<br><a href="">首页|</a><a href="">设置|</a><a href="">换肤</a></span>
+        <input type="text" name="search">
+    </header>
     <main>
         <aside>
             侧边栏
+            <ul>
+                <li><a href="">写信</a></li>
+                <li><a href="">收信</a></li>
+                <li><a href="">通讯录</a></li>
+            </ul>
+            <ul>
+                <a href="">收件箱</a>
+                <li><a href="">星标邮件</a></li>
+                <li><a href="">群邮件</a></li>
+                <li><a href="">垃圾箱</a></li>
+            </ul>
+            <ul>
+                <li><a href="">我的文件夹</a></li>
+                <li><a href="">其他邮箱</a></li>
+
+            </ul>
+            <ul>
+                <a href="">漂流瓶</a>
+                <li><a href="">日历|日记本</a></li>
+                <li><a href="">在线文档</a></li>
+                <li><a href="">文件中转</a></li>
+            </ul>
         </aside>
-        <div>你他妈哪来的邮件</div>
+        <div>你他妈哪来的邮件
+            <footer>
+
+            </footer>
+        </div>
     </main>
 </body>
 
