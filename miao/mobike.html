@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut-icon" href="https://mobike.com/cn/favicon.png" type="image/png">
+  <title>MoBike摩拜单车</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .area1 img{
+      width: 100%;
+      height: 762px;
+      object-fit: cover;
+    }
+    .hero{
+      margin: -2px;
+    }
+    .hero img{
+      width: 25%;
+      height: 260px;
+      box-sizing: border-box;
+      border:2px solid white;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
+    }
+    @media(max-width:1080px){
+      .area1 img{
+        width: 100%;
+        height:calc(762px*0.7);
+      }
+      .hero img{
+        width: 50%;
+      }
+    }
+    @media(max-width:640px){
+      .area1 img{
+        width: 100%;
+        height:calc(762px*0.7);
+      }
+      .hero img{
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main>  
+    <div>
+      <div class="area1">
+        <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-1.jpg" alt="">
+      </div>
+    </div>
+    <div class="hero">
+      <img src="https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg" alt=""><img src="https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg" alt=""><img src="https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg" alt=""><img src="https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg" alt="">
+    </div>
+  </main>
+</body>
+</html>
