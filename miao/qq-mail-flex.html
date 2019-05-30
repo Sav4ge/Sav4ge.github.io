@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    html,body{
+      height: 100%;
+      
+    }
+   
+    .container{
+      display: flex;
+      flex-direction: column;
+      height:100%;
+      box-sizing:border-box;
+      border: 1px solid;
+    }
+    header{
+      height: 100px;
+      border: 1px solid;
+    }
+    main{
+      display: flex;
+      border: 1px solid;
+
+      flex-grow: 1;
+    }
+    main aside{
+      width:250px;
+      border: 1px solid;
+      
+    }
+    main div{
+      flex-grow: 1;  
+      border: 1px solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>QQMail</header>
+    <main>
+      <aside>aside</aside>
+      <div>你tm哪来的邮件</div>
+    </main>
+  </div>
+</body>
+</html>
