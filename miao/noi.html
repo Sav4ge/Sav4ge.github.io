@@ -1,18 +1,18 @@
   <script id="ch0103/01"> 
-    var a = prompt("GKDGKD");
-    var b = prompt("KKPKKP");
+    var a = Number(prompt("GKDGKD"));
+    var b = Number(prompt("KKPKKP"));
     console.log(a + b);
   </script>
   <script id="ch0103/02">
-    var a = prompt("输入a的值 范围为-10000 - +10000");
-    var b = prompt("输入b的值 范围为-10000 - +10000");
-    var c = prompt("输入c的值 范围为-10000 - +10000");
+    var a = Number(prompt("输入a的值 范围为-10000 - +10000"));
+    var b = Number(prompt("输入b的值 范围为-10000 - +10000"));
+    var c = Number(prompt("输入c的值 范围为-10000 - +10000"));
     console.log((a + b) * c);
   </script>
   <script id="ch0103/03">
-    var a = prompt("输入a的值 范围为-10000 - +10000");
-    var b = prompt("输入b的值 范围为-10000 - +10000");
-    var c = prompt("输入c的值 范围为-10000 - +10000 c不等于0");
+    var a = Number(prompt("输入a的值 范围为-10000 - +10000"));
+    var b = Number(prompt("输入b的值 范围为-10000 - +10000"));
+    var c = Number(prompt("输入c的值 范围为-10000 - +10000 c不等于0"));
     console.log((a + b) / c);
   </script>
   <script id="ch0103/04">
@@ -28,21 +28,21 @@
     console.log(result.toFixed(9));
   </script>
   <script id="ch0103/06">
-    var a = prompt("甲流搞了多少人呀");
-    var b = prompt("凉了多少人呀");
+    var a = Number(prompt("甲流搞了多少人呀"));
+    var b = Number(prompt("凉了多少人呀"));
     console.log(100 * b / a + "%");
   </script>
   <script id="ch0103/07">
-    var a = prompt("");
-    var b = prompt("");
-    var c = prompt("");
-    var d = prompt("");
-    var x = prompt("");
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
+    var c = Number(prompt(""));
+    var d = Number(prompt(""));
+    var x = Number(prompt(""));
     var result = Number(a * Math.pow(x,3) + b * Math.pow(x,2) + c * x + d * 1) ;
     console.log(result.toFixed(7));
   </script>
   <script id="ch0103/08">
-    var f = prompt("");
+    var f = Number(prompt(""));
     var result = 5 * (f - 32) / 9;
     console.log(result);
   </script>
@@ -62,8 +62,8 @@
     console.log(R.toFixed(2));
   </script>
   <script id="ch0103/11">
-    var a = prompt("");
-    var b = prompt("");
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
     var k = parseInt((a / b));
     var r = a - k * b;
     console.log(r);
@@ -94,7 +94,7 @@
     var result = n - y / x;
     console.log(parseInt(result));
   </script>
-  <script id="ch103/16">
+  <script id="ch0103/16">
     var Xa = prompt("");
     var Ya = prompt("");
     var Xb = prompt("");
@@ -103,7 +103,7 @@
     var result = Math.pow(result,.5);
     console.log(result.toFixed(3));
   </script>
-  <script id="ch103/17">
+  <script id="ch0103/17">
     var x1 = prompt(""),y1 = prompt(""),x2 = prompt(""),y2 = prompt(""), x3 = prompt(""),y3 = prompt("");
     function fun(Xa,Xb,Ya,Yb){
       var res =(Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb);
@@ -117,14 +117,14 @@
     var S = Math.pow(p * (p - a)*(p - b)*(p - c),.5);
     console.log(S.toFixed(2));
   </script>
-  <script id="ch103/18">
+  <script id="ch0103/18">
     var a1 = prompt("");
     var a2 = prompt("");
     var n = prompt("");
     var result =a1 * 1 + (a2 - a1) * (n - 1);
     console.log(result);
   </script>
-  <script id="ch103/19">
+  <script id="ch0103/19">
     var a = Number(prompt(""));
     if (a < 1){
       alert("你输入的值a不合法!");
