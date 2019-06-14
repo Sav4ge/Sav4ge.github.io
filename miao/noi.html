@@ -30,27 +30,28 @@
   <script id="ch0103/06">
     var a = Number(prompt("甲流搞了多少人呀"));
     var b = Number(prompt("凉了多少人呀"));
-    console.log(100 * b / a + "%");
+    var result = 100 * b / a;
+    console.log(result.toFixed(3) + "%");
   </script>
   <script id="ch0103/07">
+    var x = Number(prompt(""));
     var a = Number(prompt(""));
     var b = Number(prompt(""));
     var c = Number(prompt(""));
     var d = Number(prompt(""));
-    var x = Number(prompt(""));
     var result = Number(a * Math.pow(x,3) + b * Math.pow(x,2) + c * x + d * 1) ;
     console.log(result.toFixed(7));
   </script>
   <script id="ch0103/08">
     var f = Number(prompt(""));
     var result = 5 * (f - 32) / 9;
-    console.log(result);
+    console.log(result.toFixed(5));
   </script>
   <script id="ch0103/09">
     var r = Number(prompt("输入你的半径"));
     var d = Number(2 * r);
-    var round = Number(Math.PI * r * 2);
-    var square = Number(Math.PI * (r * r));
+    var round = Number(3.14159 * r * 2);
+    var square = Number(3.14159 * (r * r));
     console.log(d.toFixed(4));
     console.log(round.toFixed(4));
     console.log(square.toFixed(4));
@@ -66,7 +67,7 @@
     var b = Number(prompt(""));
     var k = parseInt((a / b));
     var r = a - k * b;
-    console.log(r);
+    console.log(r.toFixed(4));
   </script>
   <script id="ch0103/12">
     var r = prompt();
