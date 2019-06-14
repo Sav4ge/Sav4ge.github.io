@@ -1,7 +1,7 @@
   <script id="ch0103/01"> 
     var a = Number(prompt("GKDGKD"));
     var b = Number(prompt("KKPKKP"));
-    console.log(a + b);
+    console.log(a + b); 
   </script>
   <script id="ch0103/02">
     var a = Number(prompt("输入a的值 范围为-10000 - +10000"));
@@ -13,7 +13,7 @@
     var a = Number(prompt("输入a的值 范围为-10000 - +10000"));
     var b = Number(prompt("输入b的值 范围为-10000 - +10000"));
     var c = Number(prompt("输入c的值 范围为-10000 - +10000 c不等于0"));
-    console.log((a + b) / c);
+    console.log(parseInt((a + b) / c));
   </script>
   <script id="ch0103/04">
     var a = prompt("GKDGKD");
@@ -252,3 +252,50 @@
       }
     }
   </script>
+  <script id="ch0104/10">
+    var score1 = Number(prompt(""));
+    var score2 = Number(prompt(""));
+    if((score1 < 60 && score2 >=60)||(score2 < 60 && score1 >=60)){
+      console.log("1");
+    }else{
+      console.log("0");
+    }
+  </script>
+  <script id="ch0104/11">
+    var day = parseInt(Number(prompt("")));
+    if(1 <= day <= 7){
+      if(day == 1 ||day == 3 ||day == 5){
+        console.log("NO");
+      }else{
+        console.log("YES");
+      }
+    }else{
+      alert("你写的是TM周几啊sb");
+    }
+  </script>
+  <script id="ch0104/12">
+    var distance = Number(prompt(""));
+    if((50 + distance/3) < distance/1.2){
+      console.log("Bike");
+    }else if((50 + distance/3) === distance/1.2){
+      console.log("All");
+    }else{
+      console.log("Walk");
+    }
+  </script>
+  <script id="ch0104/13">
+    var x = Number(prompt(""));
+    if(0 <= x < 20){
+      if(0 <= x < 5){
+        let result = -x + 2.5;
+        console.log(result.toFixed(3));
+      }else if( 5 <= x < 10){
+        let result = 2 - 1.5 * (x-3) * (x-3);
+        console.log(result.toFixed(3));
+      }else{
+        let result =x / 2 - 1.5;
+        console.log(result.toFixed(3));
+      }
+    }
+  </script>
+
