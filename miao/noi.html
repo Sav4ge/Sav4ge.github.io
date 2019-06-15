@@ -299,4 +299,28 @@
       }
     }
   </script>
+  <script id="ch0104/14">
+    var weight = Number(prompt(""));
+    var fast = prompt("");
+    if(fast == "y"){
+      if(weight <= 1000){
+      console.log(8 + 5);
+      }else if(weight>1000 && weight <= 1500){
+        console.log(12 + 5);
+      }else{
+        let result = (weight - 1000) * 4 / 500;
+        console.log(result + 5);
+      }
+    }else{
+      if(weight <= 1000){
+      console.log(8);
+      }else if(weight>1000 && weight <= 1500){
+        console.log(12);
+      }else{
+        let result = (weight - 1000) * 4 / 500;
+        console.log(result);
+      }
+    }
+
+  </script>
 
