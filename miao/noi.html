@@ -321,6 +321,97 @@
         console.log(result);
       }
     }
-
+  </script>
+  <script id="ch0104/15">
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
+    var c = Number(prompt(""));
+    if(a > b && b > c){
+      console.log(a);
+    }else if( b > a && b > c){
+      console.log(b);
+    }else{
+      console.log(c);
+    }
+  </script>
+  <script id="ch0104/16">
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
+    var c = Number(prompt(""));
+    if(a + b > c && c + b >a && a + c >b){
+      console.log("yes");
+    }else{
+      console.log("no");
+    }
+  </script>
+  <script id="ch0104/17">
+    var year = Number(prompt(""));
+    if((year% 4 === 0 || year%100 === 0 && year%400 !== 0) && year % 3200 !== 0 ){
+      console.log("Y");
+    }else{
+      console.log("N");
+    }
+  </script>
+  <script id="ch0104/18">
+    var x = Number(prompt(""));
+    var y = Number(prompt(""));
+    if(x >= -1 && x <= 1 && y >= -1 && y <= 1){
+      console.log("yes");
+    }else{
+      console.log("no");
+    }
+  </script>
+  <script id="ch0104/19">
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
+    var count = prompt("");
+    if(count == "+"){
+      console.log(a + b);
+    }else if(count == "-"){
+      console.log(a - b);
+    }else if(count == "*"){
+      console.log(a * b);
+    }else if(count == "/"){
+      if(b == 0){
+        console.log("Divided by zero!");
+      }else{
+        console.log(a / b);
+      }
+    }else{
+      console.log("Invalid operator!");
+    }
+  </script>
+  <script id="ch0104/20">
+    var a = Number(prompt(""));
+    var b = Number(prompt(""));
+    var c = Number(prompt(""));
+    var x1 = ( -b + Math.sqrt(b *b - 4 * a * c)) / 2 * a;
+    x1 = Number(x1.toFixed(5));
+    var x2 = ( -b - Math.sqrt(b *b - 4 * a * c)) / 2 * a;
+    x2 = Number(x2.toFixed(5));
+    if(b * b == 4 * a * c){
+      console.log("x1=x2="+x1);
+    }else if(b * b > 4 * a * c){
+      if(x1 > x2){
+        console.log("x1="+x1);
+        console.log("x2="+x2);
+      }else{
+        console.log("x2="+x2);
+        console.log("x1="+x1);
+      }
+    }else{
+      var exsist = - b /(2 * a);
+      var xubu = Math.sqrt(4 * a * c - b * b)/ 2 * a;
+      console.log("x1=" + exsist.toFixed(5) + "+" + xubu.toFixed(5) + "i");
+      console.log("x2=" + exsist.toFixed(5) + "-" + xubu.toFixed(5) + "i");
+    }
+  </script>
+  <script id="ch0104/21">
+    var n = Number(prompt(""));
+    var x = Number(prompt(""));
+    var y = Number(prompt(""));
+    var result = n - y / x ;
+    console.log(parseInt(result));
   </script>
 
+  
