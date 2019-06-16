@@ -410,5 +410,130 @@
     var result = n - y / x ;
     console.log(parseInt(result));
   </script>
+  <script id="ch0105/01">
+    var n = Number(prompt(""));
+    var res = [];
+    var result = 0 ;
+    for(var i = 0; i< n; i++){
+      res[i] = Number(prompt(""));
+      result += res[i];
+    }
+    result = Number(result / n);
+    console.log(result);
+  </script>
+  <script id="ch0105/02">
+    var arr = [];
+    var result = 0;
+    for(var i = 0 ; i < 12 ; i++){
+      arr[i]= Number(prompt(""));
+      result += arr[i];
+    }
+    result /= 12;
+    console.log("$" + result.toFixed(2));
+  </script>
+  <script id="ch0105/03">
+    var n = Number(prompt(""));
+    var res = [];
+    var result = 0 ;
+    if(n < 100){
+      for(var i = 0; i < n; i++){
+        res[i] = Number(prompt(""));
+        if(Math.abs(res[i]) <= 1000){
+          result += res[i];
+        } 
+      }
+    }
+    result = Number(result / n);
+    console.log(result.toFixed(4));
+  </script>
+  <script id="ch0105/04">
+    var n = Number(prompt(""));
+    var arr = [];
+    var result = 0;
+    for(var i = 0;i < n ; i++){
+      arr[i] = Number(prompt(""));
+      result += arr[i];
+    }
+    var average = result/n;
+    console.log(result + " " + average.toFixed(5));
+  </script>
+  <script id="ch0105/05">
+    var n = Number(prompt(""));
+    var arr = [];
+    result = 0;
+    if(n >= 1 && n < 100){
+      for(var i = 0; i < n ; i++){
+        arr[i] =Number(prompt("")) ;
+        if(result < arr[i]){
+          result = arr[i];
+        }
+      }
+    }
+    console.log(result);
+  </script>
+  <script id="ch0105/06">
+    var n = Number(prompt(""));
+    var arr = [];
+    var max = 0 , min = 0;
+    if(n >= 1 && n <= 1000){
+      for(var i = 0; i < n; i++){
+        if(n > 0 && n <= 1000){
+          arr[i] = Number(prompt(""));
+          if(max < arr[i]){
+            max = arr[i];
+          }
+          if(min > arr[i]){
+            min = arr[i];
+          }
+        }
+      }
+    }
+    console.log(max - min);
+  </script>
+  <script id="ch0105/07">
+    var n = Number(prompt(""));
+    var arr = [];
+    var sum = 0,gold = 0,sliver = 0,copper = 0;
+    if(n >= 1 && n <= 17){
+       for(var i = 0; i < n ; i++){
+         arr[i] = prompt("");
+         arr[i] =  arr[i].split(" ");
+         gold += Number(arr[i][0]);
+         sliver += Number(arr[i][1]);
+         copper += Number(arr[i][2]);
+       }
+    }
+    sum += (gold + sliver + copper);
+    console.log(gold + " " + sliver + " " + copper + " " + sum);
+  </script>
+  <script id="ch0105/08">
+    var n = Number(prompt(""));
+    var arr = [];
+    var result = (n - 2) * 180;
+    for(var i = 0; i < n - 1 ; i++){
+      arr[i] = Number(prompt(""));
+      result -= arr[i];
+    }
+    console.log(result);
+  </script>
+  <script id="ch0105/09">
+    var m = Number(prompt("")), n = Number(prompt(""));
+    var result = 0;
+    for(var i = m ; i <= n ; i++){
+      if(i % 2 !== 0){
+        result += i;
+      }
+    }
+    console.log(result);
+  </script>
 
-  
+  <script id="ch0105/37">
+    var M = Number(prompt(""));
+    var N = Number(prompt(""));
+    var X = Number(prompt(""));
+    X = X - Math.ceil(M/N);
+    for(X; X > 0 ;X -=Math.ceil(M/N)){
+      N += parseInt(M / N);
+    }
+    console.log(N);
+  </script>
