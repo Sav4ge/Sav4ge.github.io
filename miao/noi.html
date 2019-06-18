@@ -601,7 +601,6 @@
       for(var i = 0; i < 20; i++){
         price +=(K / 100) *200;
         pay += N; 
-        console.log(pay + ","+ price);
         if(pay >= price){
           var M = i + 1;
           console.log(M + 1);
@@ -610,7 +609,7 @@
       }
     }  
     if(pay < price){
-      console.log("Impossible");
+      console.log("Impossible");''
     }
   </script>
   <script id="ch0105/17">
@@ -623,7 +622,228 @@
     }
     console.log(result);
   </script>
-
+  <script id="ch0105/18">
+     var n = Number(prompt(""));
+     var liquorSum = Number(prompt(""));
+     var liquorYes = Number(prompt(""));
+     var x = liquorYes / liquorSum;
+     for(var i = 0; i < n - 1 ; i++){
+       var otherSum = Number(prompt(""));
+       var otherYes = Number(prompt(""));
+       var y = otherYes / otherSum;
+       if(y - x >0.05){
+         console.log("better");
+       }else if(x - y > 0.05){
+         console.log("worse");
+       }else{
+         console.log("same");
+       }
+     }
+  </script>
+  <script id="ch0105/19">
+    var n = Number(prompt(""));
+    var time = 0;
+    for(var i = 0 ; i < n ; i++){
+      var x = Number(prompt(""));
+      var y = Number(prompt(""));
+      var p = Number(prompt(""));
+      var distance = Math.sqrt(x * x + y * y);
+      time += distance / 25 + 1.5 * p; 
+    }
+    console.log(Math.ceil(time));
+  </script>
+  <script id="ch0105/20">
+    var h = Number(prompt(""));
+    var path = h;
+    var result  = h / Math.pow(2 , 10);
+    for(var i = 0 ; i < 9 ; i++){
+     path += h;
+     h = 0.5 * h;
+    }
+    console.log(path.toFixed(4));
+    console.log(result.toFixed(7));
+  </script>
+  <script id="ch0105/21">
+    var N = Number(prompt(""));
+    for(i = N;i !== 1 ; i = N){
+      if(N % 2 !== 0){
+        var resOdd = 3 * N + 1;
+        console.log(N + "*"+ 3 + "+" + 1 + "=" + resOdd);
+        N = resOdd;
+      }else if(N % 2 == 0){
+        var resEven = N / 2;
+        console.log(N + "/" + 2 + "=" + resEven);
+        N = resEven;
+      }
+    }
+    if(N == 1){
+      console.log("End");
+    }
+  </script>
+  <script id="ch0105/22">
+    var cash = 0;
+    var save = 0;
+    var count = 0;
+    for(let i = 0; i < 12 ; i++) {
+      var n = Number(prompt());
+      cash = cash + 300 - n;
+      if(cash < 0) {
+        cash = 0;
+        if(count == 0) {
+        count = i + 1;
+        }
+      }
+      save = save + Math.floor(cash / 100) * 100;
+      cash = cash % 100; 
+    }
+      if(count != 0) {
+        console.log(- count);
+      }else {
+        cash = cash + save * 1.2;
+        console.log(cash);
+    }
+  </script>
+  <script id="ch0105/23">
+    var m = Number(prompt(""));
+    var n = Number(prompt(""));
+    var count = 0;
+    for(var i = 0 ;i < n ; i++){
+      var take = Number(prompt(""));
+      if(m > take){
+        m -= take;
+      }else if(m < take){
+        count++;
+      }
+    }
+    console.log(count);
+  </script>
+  <script id="ch0105/24">
+    var n = Number(prompt(""));
+    var count = 0;
+    for(var i = 0 ; i < n ; i++){
+      var 收缩压 = Number(prompt(""));
+      var 舒张压 = Number(prompt(""));
+      var hour = 0;
+      if(收缩压>= 90 && 收缩压 <=140 && 舒张压 >=60&& 舒张压<= 90){
+        count++;
+        if(hour < count){
+          hour = count;
+        }else{
+          count = 0;
+        }
+      }
+    }
+    console.log(hour - 1);
+  </script>
+  <script id="ch0105/25">
+    var a10=1, b10=0, c10=0,a7=2,b7=0,c7=2,a9=1,b9=2,c9=1;
+    var x = a10*100+b10*10+c10;
+    var y = a7*49+b7*7+c7;
+    var z = a9*81+b10*9+c9;
+    for(var x = a10*100+b10*10+c10; x>= 100 && x <=999 ;x++){
+      if(a10*100+b10*10+c10 == a7*49+b7*7+c7 &&a10*100+b10*10+c10 == a9*81+b10*9+c9 && a7 == c9 && b7 == b9 && c7 == a9 ){
+        x = a10*100+b10*10+c10;
+        var y = a7*49+b7*7+c7;
+        var z = a9*81+b10*9+c9;
+          console.log(a10+""+b10+""+c10);
+      }else{
+        c10 +=1;
+        c7 += 1;
+        c9 += 1;
+        if(c10 > 9){
+          c10 = 0;
+          b10 +=1;
+          if(b10 > 9){
+            a10 +=1;
+          }
+        }
+        if(c7 > 6){
+          c7 = 0;
+          b7 +=1;
+          if(b7 > 6){
+            a7 +=1;
+          }
+        }
+        if(c9 > 8){
+          c9 = 0;
+          b9 +=1;
+          if(b9 > 8){
+            a9 +=1;
+          }
+        }
+      }
+    }
+    
+  </script>
+  <script id="ch0105/26">
+    var n = Number(prompt(""));
+    var count = 0;
+    for(var i = 0; i < n ;i++){
+      var x = prompt("");
+      if(Number(x)>=1000 &&Number(x)<=9999){
+        var res = x.split("");
+        if(res[3] - res[2] - res[1] - res[0] >0){
+          count++;
+        }
+      }
+    }
+    console.log(count);
+  </script>
+  <script id="ch0105/27">
+    var K = Number(prompt(""));
+    if(K >=1 && K <= 15){
+      var sn = 0;
+      var n = 1
+      for(var i = 1; i <= K ; i++){
+        sn += 1/n;
+        n++;
+        if(sn > K){
+         break;
+        } 
+      }
+    }
+    console.log(n);
+  </script>
+  <script id="ch0105/28">
+    var n = prompt("");
+    var x = n.split("");
+    x= x.reverse();
+    for(var i = 0; i < x.length; i++){
+      console.log(x[i]);
+    }
+  </script>
+  <script id="ch0105/29">
+    var n = prompt('n')
+    var arr = n.split('')
+    if(n<0){
+      arr.shift()
+      console.log(-arr.reverse().join('')*1)
+    }else{
+      console.log(arr.reverse().join('')*1)
+    }
+  </script>
+  <script id="ch0105/30">
+    var m = Number(prompt(""));
+    var k = Number(prompt(""));
+    if(m>1 && m < 100000 && k >1 && k <5){
+      if(m % 19 == 0){
+        var x = m.split('');
+        var count =0;
+        for(var i = 0; i < 5; i++){
+          if(x[i] == 3){
+            count++;
+          }
+          if(count == 3){
+            console.log("YES");
+          }else{
+            console.log("NO");
+          }
+        }
+      }else{
+        console.log("No");
+      }
+    }
+  </script>
   <script id="ch0105/37">
     var M = Number(prompt(""));
     var N = Number(prompt(""));
