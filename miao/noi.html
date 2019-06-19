@@ -823,7 +823,7 @@
     }
   </script>
   <script id="ch0105/30">
-    var m = Number(prompt(""));
+    var m = prompt("");
     var k = Number(prompt(""));
     if(m>1 && m < 100000 && k >1 && k <5){
       if(m % 19 == 0){
@@ -833,15 +833,42 @@
           if(x[i] == 3){
             count++;
           }
-          if(count == 3){
-            console.log("YES");
-          }else{
-            console.log("NO");
-          }
         }
       }else{
         console.log("No");
       }
+      if(count == 3){
+            console.log("YES");
+          }else{
+            console.log("NO");
+          }
+    }
+  </script>
+  <script id="ch0105/31">
+    var N = prompt("");
+    var M = prompt("");
+    var arrLight = [];
+    var arr = [];
+
+    for(var i = 0 ; i < M ; i++){
+      arrLight[i] = false;
+    }
+    for(var j = 2 ; j <= M ; j++){
+      for(var k = 1 ; j * k <= M ;k++){
+        arrLight[k * j] = !arrLight[ k * j ];
+      }
+    }
+    for(var s = 1 ; s < N; s++){
+       if(arrLight[s] == false){
+       arr.push(s);
+       }
+    }
+    console.log(arr.join(","));
+  </script>
+  <script id="ch0105/32">
+    var n = +prompt("");
+    for(var i = 0 ; i < n ; i++){
+      
     }
   </script>
   <script id="ch0105/37">
