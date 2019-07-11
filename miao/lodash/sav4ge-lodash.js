@@ -7,7 +7,7 @@ var sav4ge = {
       initialval = reducer(initialval,ary[i]);
       return initialval;
     }
-  }
+  },
   foreach:function(ary,action){
     var product = 0;
     for(var i = 0 ; i< ary.length;i++){
