@@ -11,7 +11,7 @@ var sav4ge = {
   foreach:function(ary,action){
     var product = 0;
     for(var i = 0 ; i< ary.length;i++){
-      product = action(ary[i]);
+        product += action(ary[i]);
     }
     return product;
   }
