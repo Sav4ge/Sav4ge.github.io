@@ -8,11 +8,11 @@ var sav4ge = {
       return initialval;
     }
   },
-  forEach:function(ary,action){
-    var product = 0;
-    for(var i = 0 ; i< ary.length;i++){
-        product += action(ary[i]);
-    }
-    return product;
-  }
+  // forEach:function(ary,action){
+  //   var product = 0;
+  //   for(var i = 0 ; i< ary.length;i++){
+  //       product += action(ary[i]);
+  //   }
+  //   return product;
+  // }
 }
