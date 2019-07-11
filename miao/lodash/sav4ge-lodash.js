@@ -8,4 +8,9 @@ var sav4ge = {
       return initialval;
     }
   },
+  foreach:function (ary , action){
+    for(var i= 0 ; i < ary.length ; i++){
+      action(ary[i]);
+    }
+  },
 }
