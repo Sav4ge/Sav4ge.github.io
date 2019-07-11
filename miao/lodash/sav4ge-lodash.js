@@ -2,6 +2,7 @@ var sav4ge = {
   compact: function(ary) {
     return ary.filter(it => it)
   },
+<<<<<<< HEAD:miao/lodash/Sav4ge-lodash.js
   reduce:function (ary,initialval,reducer){
     for(var i = 0 ; i < ary.length ; i++){
       initialval = reducer(initialval,ary[i]);
@@ -16,3 +17,6 @@ var sav4ge = {
     return product;
   }
 }
+=======
+}
+>>>>>>> 2bde39b2668eb67dada1945bd408338777852669:miao/lodash/sav4ge-lodash.js
